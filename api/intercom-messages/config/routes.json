@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/intercom-messages",
+      "handler": "intercom-messages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/intercom-messages/count",
+      "handler": "intercom-messages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/intercom-messages/:id",
+      "handler": "intercom-messages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/intercom-messages",
+      "handler": "intercom-messages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/intercom-messages/:id",
+      "handler": "intercom-messages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/intercom-messages/:id",
+      "handler": "intercom-messages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

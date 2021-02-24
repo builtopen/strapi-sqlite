@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "intercom_messages",
+  "info": {
+    "name": "Intercom Messages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "emailSubject": {
+      "type": "string",
+      "required": true
+    },
+    "emailBody": {
+      "type": "richtext",
+      "required": true
+    },
+    "inappMessageBody": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
